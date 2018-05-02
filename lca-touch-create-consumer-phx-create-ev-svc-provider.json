@@ -1,0 +1,47 @@
+{
+    "provider": {
+        "name": "phx-create-ev-svc-provider"
+    },
+    "consumer": {
+        "name": "lca-touch-create-consumer"
+    },
+    "interactions": [
+        {
+            "description": "Create User Request",
+            "request": {
+                "method": "POST",
+                "path": "/create",
+                "headers": {
+                    "content-type": "application/json"
+                },
+                "body": {
+                    "id": "100",
+                    "name": "Pijush"
+                }
+            },
+            "response": {
+                "status": 200,
+                "headers": {
+                    "content-type": "application/json"
+                },
+                "body": {
+                    "id": "100",
+                    "name": "ServiceName"
+                }
+            },
+            "providerStates": [
+                {
+                    "name": "default"
+                }
+            ]
+        }
+    ],
+    "metadata": {
+        "pact-specification": {
+            "version": "3.0.0"
+        },
+        "pact-jvm": {
+            "version": "3.5.0"
+        }
+    }
+}
