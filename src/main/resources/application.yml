@@ -1,0 +1,13 @@
+server:
+  tomcat:
+    accesslog:
+      enabled: 'true'
+    max-connections: '0'
+    max-threads: 0
+
+    
+logging:
+  level:
+    org.apache.catalina: ERROR
+    org.apache.tomcat.embed: DEBUG
+

@@ -1,0 +1,39 @@
+{
+    "provider": {
+        "name": "phx-ev-svc-provider"
+    },
+    "consumer": {
+        "name": "lca-touch-consumer"
+    },
+    "interactions": [
+        {
+            "description": "Phoenix EV Service",
+            "request": {
+                "method": "GET",
+                "path": "/eligibility"
+            },
+            "response": {
+                "status": 200,
+                "headers": {
+                    "content-type": "application/json"
+                },
+                "body": {
+                    "status": "Ping Success"
+                }
+            },
+            "providerStates": [
+                {
+                    "name": "default"
+                }
+            ]
+        }
+    ],
+    "metadata": {
+        "pact-specification": {
+            "version": "3.0.0"
+        },
+        "pact-jvm": {
+            "version": "3.5.0"
+        }
+    }
+}
